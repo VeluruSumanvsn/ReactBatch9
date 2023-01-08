@@ -1,4 +1,5 @@
 import React from 'react';
+import Child from './Child';
 
 class Navbar extends React.Component{
     state={
@@ -7,8 +8,10 @@ class Navbar extends React.Component{
     render(){
     return(
         <div>
+             
            <h1>class based Component</h1>
-           <h2>{this.state.name}</h2>
+           <Child xyz={this.state.name} />
+          
         </div>
     )
 }
