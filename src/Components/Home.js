@@ -10,7 +10,7 @@ const Home = () =>{
     }
     return(
         <div>
-            <h1>Hooks added</h1>
+            <h1>Hello</h1>
             <h2>{count}</h2>
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>Decrement</button>
