@@ -7,6 +7,7 @@ function Header(){
             <h1>Ui Team</h1>
             <p>hai ui team</p>
             <p>Ui Developers</p>
+			<p>Ranjith</p>
         </div>
     )
 }
