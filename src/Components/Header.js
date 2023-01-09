@@ -15,7 +15,7 @@ function Header(){
                 <li>pavan</li>
                 <li>ranjith</li>
                  <li>Hello</li>
-                 <li>Pushpa</li>
+                 <li>Munipushpa</li>
             </ul>
         </div>
     )
