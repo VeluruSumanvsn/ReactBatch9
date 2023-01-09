@@ -5,9 +5,11 @@ function Header(){
     return(
         <div>
             <h1>Ui Team</h1>
+            <h1>React class</h1>
             <p>hai ui team</p>
             <p>Ui Developers</p>
 			<p>Ranjith</p>
+
         </div>
     )
 }
