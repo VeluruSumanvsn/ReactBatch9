@@ -4,8 +4,7 @@ function Header(){
     return(
         <div>
             <ul>
-                <li>react js developer</li>
-                <li>hello good morning all</li>
+                <li>ranjith</li>
                 <li>Hello</li>
                 <li>Good</li>
                 <li>Hello</li>
