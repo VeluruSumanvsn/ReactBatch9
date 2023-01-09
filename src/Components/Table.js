@@ -15,7 +15,7 @@ function Table(){
                 </thead>
                     <tbody>
                         <tr>
-                            <td>Kishore</td>
+                            <td>Kirshna</td>
                             <td>TCS</td>
                             <td>0000</td>
                             <td>TA</td>
