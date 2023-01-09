@@ -5,7 +5,7 @@ function Header(){
         <div>
             <ul>
                 <li>Hello</li>
-                <li>Good morning</li>
+                <li>Good</li>
                 <li>Hello</li>
                 <li>Hello</li>
                 <li>Hello</li>
