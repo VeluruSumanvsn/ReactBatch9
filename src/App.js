@@ -10,7 +10,7 @@ import Table from "./Components/Table";
 function App() {
   return (
     <header>
-       <Header /> 
+       <Header />
        <Navbar /> 
        <Counter />
        <Home />
