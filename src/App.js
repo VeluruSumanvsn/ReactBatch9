@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Funcbased from "./Components/Funcbased";
+import Table from "./Components/Table";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
        <Home />
        <ChangeName />
        <Funcbased />
+       <Table />
     </header>
   );
 }
