@@ -12,7 +12,7 @@ import Guest1 from "./Components/Guest1";
 
 function App() {
   return (
-    <React.Fragment>
+    </*React.Fragment>
        <Header /> 
        <Child />
        <Navbar /> 
@@ -23,7 +23,8 @@ function App() {
        <Table />
        <Usestate />
        <Guest1 />
-    </React.Fragment>
+    </React.Fragment*/>
+    <createstate />
   );
 }
 export default App;
