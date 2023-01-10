@@ -9,11 +9,13 @@ import Table from "./Components/Table";
 import Child from "./Components/Child";
 import Usestate from "./Components/Usestate";
 import Guest1 from "./Components/Guest1";
+import Surendra from "./Components/Surendra";
 
 function App() {
   return (
-    </*React.Fragment>
-       <Header /> 
+
+    <React.Fragment>
+      {/* <Header /> 
        <Child />
        <Navbar /> 
        <Counter />
@@ -22,9 +24,11 @@ function App() {
        <Funcbased />
        <Table />
        <Usestate />
-       <Guest1 />
-    </React.Fragment*/>
-    <createstate />
+       <Guest1 /> */}
+       <Surendra />
+    </React.Fragment>
+    
+    
   );
 }
 export default App;
