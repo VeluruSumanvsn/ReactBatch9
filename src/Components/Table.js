@@ -2,8 +2,8 @@ import React from 'react'
 
 function Table(){
     return(
-        <div class="nav">
-            <table class="table">
+        <div className="nav">
+            <table className="table">
                 <thead> 
                 <tr>
                         <th>Name</th>

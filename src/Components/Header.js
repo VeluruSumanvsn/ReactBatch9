@@ -1,24 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Header(){
+export default function Header(){
+    const [names, setNames] = useState([
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+        
+    ])
     return(
         <div>
-            <ul>
-                <li>sasi</li>
-                <li>Suman</li>
-                <li>Hello</li>
-                <li>sarika</li>
-                <li>swarna</li>
-                <li>Hello</li>
-                <li>Good</li>
-                <li>Hello</li>
-                <li>pavan</li>
-                <li>ranjith</li>
-                 <li>Hello</li>
-                 <li>Munipushpa</li>
-                 <li>yuvi</li>
-            </ul>
+           <h1>Loop the data through map method</h1>
+           {names.map((data, index)=>(
+            <p key={index}>{data.name}</p>
+           ))}
         </div>
     )
 }
-export default Header;

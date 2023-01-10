@@ -6,18 +6,20 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Funcbased from "./Components/Funcbased";
 import Table from "./Components/Table";
+import Child from "./Components/Child";
 
 function App() {
   return (
-    <header>
-       <Header />
+    <React.Fragment>
+       <Header /> 
+       <Child />
        <Navbar /> 
        <Counter />
        <Home />
        <ChangeName />
        <Funcbased />
        <Table />
-    </header>
+    </React.Fragment>
   );
 }
 export default App;
