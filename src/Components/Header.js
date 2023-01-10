@@ -1,6 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Header(){
+export default function Header(){
+    const [names, setNames] = useState([
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+            {name: "Suman"},
+            {name: "Surendra"},
+            {name: "Kishore"},
+            {name: "Rajesh"},
+            {name: "Swarna"},
+            {name: "Sasi"},
+            {name: "Kerthi"},
+            {name: "Dayakar"},
+        
+    ])
     return(
         <div>
             <ul>
@@ -12,7 +47,10 @@ function Header(){
                 <li>Hello</li>
                 <li>hello </li>
             </ul>
+           <h1>Loop the data through map method</h1>
+           {names.map((data, index)=>(
+            <p key={index}>{data.name}</p>
+           ))}
         </div>
     )
 }
-export default Header;

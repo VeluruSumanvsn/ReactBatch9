@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Child = () => {
+const Guest1= () => {
     const [users, setUsers] = useState([]);
 
     useEffect(()=>{
@@ -18,4 +18,4 @@ const Child = () => {
   )
 }
 
-export default Child
+export default Guest1
