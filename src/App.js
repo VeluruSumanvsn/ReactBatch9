@@ -6,13 +6,13 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Funcbased from "./Components/Funcbased";
-import Table from "./Components/Table";
 import Child from "./Components/Child";
 import Usestate from "./Components/Usestate";
 import Guest1 from "./Components/Guest1";
 import Surendra from "./Components/Surendra";
 import Dataloop from "./Components/Dataloop";
 import Userouter from "./Components/Userouter";
+import Practicedk from "./Components/Practicedk";
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <Route path="/Userouter" element={<Userouter />} />
        </Routes>    
        </BrowserRouter>
-       <Table />
+       <Practicedk />
     </React.Fragment>
     
     

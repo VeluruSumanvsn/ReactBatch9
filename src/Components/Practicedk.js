@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Table = () => {
+const Practicedk = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(()=>{
@@ -20,4 +20,4 @@ const Table = () => {
      
     )
 }
-export default Table;
+export default Practicedk;
