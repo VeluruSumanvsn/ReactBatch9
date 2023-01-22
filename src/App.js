@@ -18,14 +18,14 @@ function App() {
   return (
 
     <React.Fragment>
+      
        <Header /> 
        <Child />
        <Navbar /> 
        <Counter />
        <Home />
        <ChangeName />
-       <Funcbased />
-       <Table />
+       <Funcbased /> 
        <Usestate />
        <Guest1 /> 
        <Surendra />
@@ -33,8 +33,9 @@ function App() {
        <BrowserRouter>
        <Routes>
         <Route path="/Userouter" element={<Userouter />} />
-       </Routes>
+       </Routes>    
        </BrowserRouter>
+       <Table />
     </React.Fragment>
     
     

@@ -1,43 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function Table(){
-    return(
-        <div className="nav">
-            <table className="table">
-                <thead> 
-                <tr>
-                        <th>Name</th>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>Designation</th>
-                        <th>Domain</th>
-                    </tr>	
-                </thead>
-                    <tbody>
-                        <tr>
-                            <td>Kirshna</td>
-                            <td>TCS</td>
-                            <td>0000</td>
-                            <td>TA</td>
-                            <td>Testing</td>
-                        </tr>	
-                        <tr>
-                            <td>Suman</td>
-                            <td>Sony</td>
-                            <td>0001</td>
-                            <td>TL</td>
-                            <td>React</td>
-                        </tr>	
-                        <tr>
-                            <td>Sai</td>
-                            <td>Infy</td>
-                            <td>0001</td>
-                            <td>TL</td>
-                            <td>AWS</td>
-                        </tr>
-                    </tbody>
-            </table>						
+const Table = () => {
+    const [posts, setPosts] = useState([]);
+
+    useEffect(()=>{
+        fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((response) => response.json())
+        .then((data) => setPosts(data));
+
+    },[]);
+  return (
+   <React.Fragment>
+        <div>
+            {posts.map((post) => <li key={post.id}>{post.title}</li>)},
+            {posts.map((post) => <li key={post.id}>{post.userId}</li>)}
         </div>
+   </React.Fragment>
+
+     
     )
 }
 export default Table;
