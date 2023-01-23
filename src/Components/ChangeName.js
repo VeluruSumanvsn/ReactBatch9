@@ -14,6 +14,7 @@ const ChangeName = () => {
         <input type="text" onChange={changeName} />
       </form>
       <div>Hello!!! {name} Welcome to React Practice</div>
+      
     </>
   );
 };
