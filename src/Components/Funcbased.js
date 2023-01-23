@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { store } from "../App";
 
-function Funcbased(){
-    return(
-        <div>
-        <h2>React Components</h2>
-         <ol>
-         <li>Class Based Components</li>
-         <li>Functional Based Components</li>
-          </ol>
-        </div>
-    )
+function Funcbased() {
+  const [data, setData] = useContext(store);
+  return (
+    <div>
+      <h1>{data}</h1>
+    </div>
+  );
 }
 export default Funcbased;
