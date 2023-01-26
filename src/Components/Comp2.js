@@ -3,7 +3,7 @@ import React from 'react'
 function Comp2(props) {
   return (
     <div>
-        <button onClick={props.increment}>increment</button>
+        <button className="top"  onClick={props.increment}>increment</button>
     </div>
   )
 }

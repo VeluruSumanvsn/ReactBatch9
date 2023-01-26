@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
 import Funcbased from "./Components/Funcbased";
+import Surendra from "./Components/Surendra";
 
 export const store = createContext();
 function App() {
@@ -11,8 +12,9 @@ function App() {
       <store.Provider value={[data, setData]}>
         <Funcbased />
       </store.Provider>
-      <Dashboard />
+      <Dashboard /> 
+      <Surendra />
     </React.Fragment>
   );
-}
+  }
 export default App;

@@ -1,25 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import Comp8 from '../Components/Comp8';
+import Comp6 from '../Components/Comp6';
 
-const Surendra = () => {
-    const [surendra, setsurendra] = useState([]);
-
-    useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
-        .then((response) => response.json())
-        .then((data) => setsurendra(data));
-
-    },[]);
+function Surendra() {
+    const[count, setCount] = useState(0);
+    const decrement = () =>{
+        setCount(count-1)
+    }
+    
   return (
-   <React.Fragment>
-        <div>
-            {surendra.map((user) => <li key={user.id}>{user.id}</li>)}
-            {surendra.map((user) => <li key={user.id}>{user.name}</li>)}
-            {surendra.map((user) => <li key={user.id}>{user.email}</li>)}
-            {surendra.map((user) => <li key={user.id}>{user.body}</li>)}
-           
-        </div>
-   </React.Fragment>
+   <div> 
+    <Comp8 count={count}/>
+    <Comp6 decrement={decrement}/>
+   </div>
   )
 }
-
 export default Surendra
