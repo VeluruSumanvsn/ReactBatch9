@@ -6,7 +6,7 @@ import Surendra from "./Components/Surendra";
 
 export const store = createContext();
 function App() {
-  const [data, setData] = useState(145);
+  const [data, setData] = useState(123456789);
   return (
     <React.Fragment>
       <store.Provider value={[data, setData]}>

@@ -9,7 +9,7 @@ function Surendra() {
     }
     
   return (
-   <div> 
+   <div className="center"> 
     <Comp8 count={count}/>
     <Comp6 decrement={decrement}/>
    </div>
