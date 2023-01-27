@@ -2,7 +2,9 @@ import React from 'react'
 
 function Comp1(props) {
   return (
-    <div>{props.count}</div>
+    <div>
+      <input type="text" onChange={props.handler}/>
+    </div>
   )
 }
 
